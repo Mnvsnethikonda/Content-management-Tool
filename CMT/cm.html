@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - Alert Message</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font Awesome CMT -->
+    <link rel="stylesheet" href="cm.css" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Register</h3>
+
+            <div class="title">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Title" id="title" >
+            </div>
+
+            <div class="name">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Email" id="email">
+            </div>
+
+            <div class="image">
+                <label for="image">Image
+                    <em class="important" aria-label="Required">*</em>
+                </label>
+                <input type="file" class="form-control" id="image">
+            </div>
+            
+            <div class="video">
+                <label for="video">Video
+                    <em class="important" aria-label="Required">*</em>
+                </label>
+                <input type="file" class="form-control" id="video">
+            </div>
+
+            <div class="message-box">
+                <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            <div class="button">
+                <button id="send" onclick="message()">Submit</button>
+            </div>
+            <div class="message">
+                <div class="success" id="success">Your Message Successfully Submitted!</div>
+                <div class="danger" id="danger">Feilds Can't be Empty!</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="cm.js"></script>
+</body>
+</html>
